@@ -2,6 +2,8 @@ node {
  echo 'Hello world';
    stage('Preparation') { 
       echo 'Preparation';
+	  git clone 'https://github.com/rlu1/LR_Prj.git'
+	  echo 'Preparation success';
    }
    stage('Build') {
       echo 'build';
