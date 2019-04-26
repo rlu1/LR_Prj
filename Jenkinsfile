@@ -8,7 +8,10 @@ node {
    stage('Build') {
       echo 'build';
    }
-   stage('Results') {
-      echo 'Results';
+   stage('Send Results to mail') {
+      echo 'Send Results to mail';
+	  mail to: '929674169@qq.com',
+      subject: "Running Pipeline: ${currentBuild.fullDisplayName}",
+      body: "Something is wrong with ${env.BUILD_URL}"
    }
 }
