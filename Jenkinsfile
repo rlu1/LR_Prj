@@ -3,7 +3,6 @@ node {
    stage('Preparation') { 
       echo 'Preparation';
 	  git 'https://github.com/rlu1/LR_Prj.git'
-	  git status
 	  echo 'Preparation success';
    }
    stage('Build') {
