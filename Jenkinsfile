@@ -7,6 +7,7 @@ node {
    }
    stage('Build') {
       echo 'build';
+	  cd C:\AGL_2005\COMPILER\ARM\GREEN_HILLS\2018_1_4\comp_201814
    }
    stage('Send Results to mail') {
       echo 'Send Results to mail';
